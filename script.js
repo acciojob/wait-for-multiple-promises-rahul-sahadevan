@@ -1,5 +1,13 @@
 //your JS code here. If required.
 const body = document.getElementById("output");
+const tr0 = document.createElement("tr");
+const td0 = document.createElement("td");
+const td01 = document.createElement("td");
+
+tr0.style.columnSpan = "2";
+td0.innerText = "loading";
+tr0.append(td0,td01);
+body.append(tr0);
 
 let p1 = new Promise((resolve) =>{
 	setTimeout(() =>{
@@ -23,6 +31,7 @@ let arr = [p1,p2,p3];
 let all = Promise.all(arr);
 
 all.then((data) =>{
+	tr0.style.display = "none";
 	const td1 = document.createElement("td");
 	const td2 = document.createElement("td");
 	const r1 = document.createElement("tr");
