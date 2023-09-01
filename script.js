@@ -31,7 +31,7 @@ let arr = [p1,p2,p3];
 let all = Promise.all(arr);
 
 all.then((data) =>{
-	tr0.style.display = "none";
+	// tr0.style.display = "none";
 	const td1 = document.createElement("td");
 	const td2 = document.createElement("td");
 	const r1 = document.createElement("tr");
