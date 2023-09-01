@@ -6,8 +6,8 @@ const td01 = document.createElement("td");
 
 tr0.style.columnSpan = "2";
 tr0.innerText = "Loading...";
-// tr0.append(td0,td01)
-// body.append(tr0);
+tr0.append(td0,td01)
+body.append(tr0);
 
 let p1 = new Promise((resolve) =>{
 	setTimeout(() =>{
